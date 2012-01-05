@@ -4,12 +4,16 @@ gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
 group :test, :development do
   gem 'sqlite3'
+end
+
+group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'guard-rspec'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
 
 group :production do
