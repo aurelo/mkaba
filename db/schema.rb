@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120103225454) do
+ActiveRecord::Schema.define(:version => 20120105044450) do
+
+  create_table "branches", :force => true do |t|
+    t.integer  "financial_institution_id"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
+    t.string   "city"
+    t.string   "postal_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "financial_institutions", :force => true do |t|
     t.string   "name",        :null => false
