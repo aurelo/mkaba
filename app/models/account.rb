@@ -17,6 +17,7 @@
 
 class Account < ActiveRecord::Base
   belongs_to :client
+  belongs_to :account_type
   has_many :transactions
   
   validates :account_number, :currency, :presence => true

@@ -13,6 +13,7 @@
 class Client < ActiveRecord::Base
   belongs_to :financial_institution
   has_many :accounts
+  has_many :account_types, :through => :accounts
   has_many :transactions, :through => :accounts
   
 end
