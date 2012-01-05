@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: financial_institutions
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)     not null
+#  description :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
 require 'spec_helper'
 
 describe FinancialInstitution do
@@ -10,4 +21,5 @@ describe FinancialInstitution do
   it {should validate_presence_of(:name)}
   it {should validate_uniqueness_of(:name)}    
   it {should have_many(:branches)}    
+  it {should have_many(:atms)}    
 end

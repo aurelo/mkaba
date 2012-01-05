@@ -13,4 +13,5 @@ class FinancialInstitution < ActiveRecord::Base
   validates :name, :presence => true, :uniqueness => true
   
   has_many :branches
+  has_many :atms
 end
