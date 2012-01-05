@@ -19,6 +19,9 @@ require 'spec_helper'
 
 describe Account do
   it {should belong_to(:client)}
+  it {should belong_to(:account_type)}
+  it {should have_many(:transactions)}
+  
   it {should validate_presence_of(:account_number)}
   it {should validate_presence_of(:currency)}
 end
