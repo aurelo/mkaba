@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120105095828) do
+ActiveRecord::Schema.define(:version => 20120105101130) do
+
+  create_table "accounts", :force => true do |t|
+    t.integer  "client_id"
+    t.integer  "account_type_id"
+    t.string   "account_number",    :limit => 16
+    t.float    "available_balance"
+    t.float    "ledger_balance"
+    t.string   "currency",          :limit => 3
+    t.date     "valid_to"
+    t.float    "reserve_amount"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "atms", :force => true do |t|
     t.integer  "financial_institution_id"
