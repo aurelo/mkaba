@@ -22,4 +22,5 @@ describe FinancialInstitution do
   it {should validate_uniqueness_of(:name)}    
   it {should have_many(:branches)}    
   it {should have_many(:atms)}    
+  it {should have_many(:clients)}    
 end

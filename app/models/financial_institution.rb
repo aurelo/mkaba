@@ -14,4 +14,5 @@ class FinancialInstitution < ActiveRecord::Base
   
   has_many :branches
   has_many :atms
+  has_many :clients
 end
