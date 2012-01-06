@@ -10,11 +10,16 @@ group :test, :development do
 end
 
 group :test do
+  #gem 'turn'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'guard-rspec'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
+  gem 'growl_notify'
+  gem "rb-readline"
+  gem 'spork'
+  #gem 'minitest'
 end
 
 group :production do
