@@ -19,6 +19,7 @@ group :test do
   gem 'growl_notify'
   gem "rb-readline"
   gem 'spork'
+  gem 'launchy'
   #gem 'minitest'
 end
 

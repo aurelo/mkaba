@@ -21,4 +21,4 @@ class Account < ActiveRecord::Base
   has_many :transactions
   
   validates :account_number, :currency, :presence => true
-end
+  end

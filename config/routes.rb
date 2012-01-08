@@ -1,4 +1,11 @@
 Mkaba::Application.routes.draw do
+
+  root :to => 'financial_institution#index'
+
+  #resource :bank, :controller => 'financial_institution', :only => [:index, :show]
+  match "/bank/:id", :to => "financial_institution#show", :constraints => {:id => /\d+/}
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
