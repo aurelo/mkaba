@@ -1,3 +1,29 @@
 // Place all the styles related to the FinancialInstitution controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$kaba_color: #7A0031;
+
+a {
+	text-decoration: none;
+}
+
+a p {
+	color: $kaba_color;	
+}
+
+a:hover p, a:active p {
+	color: lighten($kaba_color, 10%);
+}
+
+.ui-block-a {
+	min-height: 150px;
+	height: 150px;
+	/*background-color: red;*/
+	border: 5px solid red;
+
+}
+	
+.ui-grid-a {
+	text-align: center;
+}

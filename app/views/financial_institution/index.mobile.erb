@@ -1,2 +1,24 @@
-<h1>FinancialInstitution#index</h1>
-<p>Find me in app/views/financial_institution/index.html.erb</p>
+<%= render "header"%>
+
+<div data-role="content">
+	<div class="ui-grid-a">
+	<!-- first row -->
+		<div class="ui-block-a">
+		    <a href="#">
+			    <%= render :partial => "menu_item", :locals => {:title=>"Demo mKaba"} %>
+			</a>
+		</div>
+		    
+		<div class="ui-block-b">
+			    <%= render :partial => 'menu_item', :locals => {:title=>"Novosti"} %>
+		</div>
+	<!-- second row -->
+		<div class="ui-block-a">
+  				<%= render :partial => 'menu_item', :locals => {:title=>"Bankomati"} %>
+		</div>
+		<div class="ui-block-b">
+			    <%= render :partial =>  'menu_item', :locals => {:title=>"Poslovnice"} %>
+		</div>
+		
+	</div><!-- /grid-b -->
+</div>
